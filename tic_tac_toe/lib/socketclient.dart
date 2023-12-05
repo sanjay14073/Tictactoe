@@ -6,7 +6,7 @@ class client{
   static client? _instance;
   //private constructor
   client._internal(){
-    socket=io.io('http://192.168.1.40:3000',<String,dynamic>{
+    socket=io.io('Your ip address ',<String,dynamic>{
       'transports':['websocket'],
       'autoConnect':false,
     });
